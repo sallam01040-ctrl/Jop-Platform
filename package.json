@@ -1,0 +1,28 @@
+{
+  "name": "jobplatform-global",
+  "version": "2.0.0",
+  "description": "Enterprise Global Employment & Daily Gig Marketplace with Escrow Settlement",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "ENABLE_DEMO_LOGIN=true node server.js",
+    "test": "node test_suite.js",
+    "migrate": "node migrations/runner.js",
+    "backup": "node scripts/backup_db.js",
+    "create-admin": "node scripts/create_admin.js",
+    "seed": "node seed.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "keywords": [
+    "jobs",
+    "global-careers",
+    "daily-gigs",
+    "escrow",
+    "marketplace",
+    "stripe-payments"
+  ],
+  "author": "Google DeepMind Advanced Engineering",
+  "license": "MIT"
+}
